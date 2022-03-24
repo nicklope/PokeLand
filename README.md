@@ -1,9 +1,5 @@
 # PokeLand
 
-# PokeLand
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ### Date: 3/25/2022
 
 ## Available Scripts
