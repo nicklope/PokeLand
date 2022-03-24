@@ -1,4 +1,9 @@
+
+
 const SectionCard = (props) => {
+
+
+
   return (
     <div className="card" onClick=''>
       <div className="img-wrapper">
