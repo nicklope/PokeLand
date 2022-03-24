@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# PokeLand
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Date: 3/25/2022
 
-## Available Scripts
+### By: Nick Lopez Jason McCoy Mark Kennedy
 
-In the project directory, you can run:
+---
 
-### `npm start`
+[Trello](https://trello.com/b/GudNDon6/pokepark)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[DrawlO](https://drive.google.com/file/d/1euQqZvAFcyoxnJr51t1Ccvj3UStjlnAi/view?usp=sharing)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+### Description
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![PokeMon](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png)
+Welcome to PokeLand! The magical place where you can experience your favorite PokeMon.
 
-### `npm run build`
+PokeLand attracts trainers from all around the world to see, interact, ride exodict Pokemon. PokeLand features six different sections containing PokeMon from every region.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You don't have to catch them all, we've done that for you!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you've discovered your own Pokemon and wish to share it with the world, see our about setion for details on our Pokemon rescue program.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Technologies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1.  React
+2.  MongoDB
+3.  Mongoose
+4.  Express
+5.  Pokemon API
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Pokeland](https://images.nintendolife.com/ba755ea1654cd/best-pokemon-games.large.jpg)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## **MVP**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [ ] Get (Read)
+- [ ] Post (Create)
+- [ ] Mongoose/Express
+- [ ] React
+- [ ] Style
+- [ ] Deployed on Heroku
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### **Credits**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Pokemon Banner: [Google Search](https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Pokemon Image: [Google Search](https://images.nintendolife.com/ba755ea1654cd/best-pokemon-games.large.jpg)
