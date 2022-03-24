@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Landing from '../components/landing'
 import PokemonCard from '../components/pokemonCard'
 import SectionCard from '../components/sectionCard'
+import axios from 'axios'
 
 const Home = () => {
   const [skyPark, setSkyPark] = useState([])
@@ -10,6 +11,22 @@ const Home = () => {
   const [volcanoLand, setVolcanoLand] = useState([])
   const [hauntedHouse, setHauntedHouse] = useState([])
   const [pokemonRanch, setPokemonRanch] = useState([])
+
+  useEffect(() => {
+    getPokemon()
+  }, [])
+
+  const filterPokemon = (pokemonType) => {
+    switch (pokemonType) {
+      case '':
+        setSkyPark()
+    }
+  }
+
+  const getPokemon = async () => {
+    const response = await axios.get(``)
+    // setGenres(response)
+  }
 
   return (
     <div>
