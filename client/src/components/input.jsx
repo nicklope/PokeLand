@@ -8,7 +8,6 @@ const Input = (props) => {
           placeholder={props.placeholder}
           onChange=""
         ></input>
-        <button type="submit"></button>
       </form>
   )
 }

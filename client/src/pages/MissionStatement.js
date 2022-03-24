@@ -5,9 +5,12 @@ const MissionStatement = () => {
   return (
     <div>
       <Landing />
-      <Input placeholder="Name" />
-      <Input placeholder="Section" />
-      <Input placeholder="Image" />
+      <section class="input-section">
+        <Input placeholder="Name" />
+        <Input placeholder="Section" />
+        <Input placeholder="Image" />
+        <button>Submit</button>
+      </section>
     </div>
   )
 }
