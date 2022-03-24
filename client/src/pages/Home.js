@@ -31,8 +31,16 @@ const Home = () => {
   return (
     <div>
       <Landing />
+      <Landing />
+      <section class="sections-container">
+        <SectionCard />
+        <SectionCard />
+        <SectionCard />
+        <SectionCard />
+        <SectionCard />
+        <SectionCard />
+      </section>
       <PokemonCard />
-      <SectionCard />
     </div>
   )
 }
