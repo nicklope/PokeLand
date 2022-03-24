@@ -1,0 +1,23 @@
+{
+  "name": "pokeland",
+  "version": "1.0.0",
+  "description": "Fullstackathon Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicklope/PokeLand.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicklope/PokeLand/issues"
+  },
+  "homepage": "https://github.com/nicklope/PokeLand#readme",
+  "dependencies": {
+    "mongoose": "^6.2.8"
+  }
+}
