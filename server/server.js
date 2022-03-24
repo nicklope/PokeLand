@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+const pokemonController = require('./controllers/PokemonController')
 const routes = require('./routes')
 const db = require('./db')
 const logger = require('morgan')
@@ -10,14 +11,17 @@ const PORT = process.env.PORT || 3001
 
 app.use(express.json())
 app.use(logger('dev'))
-app.use('/api', routes)
+//app.use('/api', routes)
 app.use(cors())
 app.use(express.urlencoded({ extended: false }))
 
-//routes go here
+//controller routes go here
 app.get('/', (request, response) => {
   response.send({ msg: 'Server Running' })
 })
+// app.get('/pokemon', pokemonController, getPokemonDetails)
+// app.post('/pokemon', pokemonController, createPokemonDetails)
+// app.get('/pokemon/:pokemonId', pokemonController, findPokemon)
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
