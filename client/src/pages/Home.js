@@ -42,12 +42,14 @@ const Home = () => {
       <Landing />
       <Landing />
       <section class="container-grid">
+
         <SectionCard sectionName="Sky Park" image="" />
         <SectionCard sectionName="Water Park" image="" />
         <SectionCard sectionName="Forest Land" image="" />
         <SectionCard sectionName="Volcano Land" image="" />
         <SectionCard sectionName="Haunted House" image="" />
         <SectionCard sectionName="Pokemon Ranch" image="" />
+
       </section>
       <PokemonCard />
     </div>
