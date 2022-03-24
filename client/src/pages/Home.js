@@ -32,7 +32,7 @@ const Home = () => {
     <div>
       <Landing />
       <Landing />
-      <section class="sections-container">
+      <section class="container-grid">
         <SectionCard />
         <SectionCard />
         <SectionCard />
