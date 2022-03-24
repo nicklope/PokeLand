@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom'
-import logo from './logo.svg'
 import './styles/App.css'
 
 function App() {
