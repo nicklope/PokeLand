@@ -1,5 +1,12 @@
 import { useState, useEffect } from 'react'
+import Landing from '../components/landing'
 
 const Home = () => {
-  return <div></div>
+  return (
+    <div>
+      <Landing />
+    </div>
+  )
 }
+
+export default Home
