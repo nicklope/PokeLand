@@ -1,3 +1,2 @@
 # PokeLand
 
-Fullstackathon Project
