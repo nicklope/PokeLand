@@ -1,38 +1,157 @@
-.App {
+header {
+  background-color: #212121;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 3em;
+}
+
+header nav a {
+  margin: 0 1em;
+}
+
+input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5em 0.2em;
+  width: auto;
+  transition: all 0.2s;
+  font-size: 1.3rem;
+  color: #eee;
+}
+
+input:active,
+input:focus {
+  outline: none;
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s;
+}
+
+input:active::placeholder,
+input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+  padding: 2em 0;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+input {
+  width: 80%;
+  margin: 0 1em;
+}
+
+button {
+  padding: 0.2em 1em;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.card {
+  max-width: 300px;
+  max-height: 380px;
+  border-radius: 4px;
+  background-color: #cfc100;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin: 20px;
+}
+
+.card:hover {
+  opacity: 0.8;
+}
+
+.card .img-wrapper {
+  width: auto;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+}
+
+.card .info-wrapper {
+  padding: 1em;
+}
+.container-grid {
+  padding: 2em 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  grid-gap: 1em;
+  justify-content: center;
+}
+.genres {
+  width: 100%;
+}
+.genres h2,
+.search h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pokemon-content .image-container {
+  width: 95vw;
+  margin: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1em 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-container div {
+  margin: auto;
+  width: 90%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.image-container img {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.details {
+  width: 80%;
+  margin: auto;
+}
+
+.flex-row {
+  display: flex;
+}
+.space {
+  justify-content: space-between;
+}
+
+.input-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(168, 57, 57);
+  margin-bottom: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  background-color: rgb(163, 163, 163);
+  width: 50vw;
+  margin: 10px;
+}
+
+.sections-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
