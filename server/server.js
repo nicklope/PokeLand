@@ -19,9 +19,9 @@ app.use(express.urlencoded({ extended: false }))
 app.get('/', (request, response) => {
   response.send({ msg: 'Server Running' })
 })
-// app.get('/pokemon', pokemonController, getPokemonDetails)
-// app.post('/pokemon', pokemonController, createPokemonDetails)
-// app.get('/pokemon/:pokemonId', pokemonController, findPokemon)
+// app.get('/ and/or /park/section', pokemonController, getPokemonDetails)
+// app.post('/misson/statement', pokemonController, createPokemonDetails)
+// app.get('/poke/card/:pokemonId', pokemonController, findPokemon)
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
