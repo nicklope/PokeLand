@@ -33,48 +33,48 @@ const Home = () => {
     }
   }
 
-  const parkSection = (section) => {
-    navigate(`/park/section/${section}`)
+  const navSection = () => {
+    navigate(`/park/section/`)
   }
 
   return (
     <div>
       <Landing />
       <Landing />
-      <section class="container-grid">
+      <section className="container-grid">
         <SectionCard
           sectionName="Sky Park"
-          onclick={() => parkSection('skyPark')}
+          onclick={() => navSection()}
           image={skyParkImg}
           // pokemon={skyPark}
         />
         <SectionCard
           sectionName="Water Park"
-          onclick={() => parkSection('waterPark')}
+          // onClick=""
           image={waterParkImg}
           // pokemon={waterPark}
         />
         <SectionCard
           sectionName="Forest Land"
-          onclick={() => parkSection('forestLand')}
+          // onClick=""
           image={forestLandImg}
           // pokemon={forestLand}
         />
         <SectionCard
           sectionName="Volcano Land"
-          onclick={() => parkSection('volcanoLand')}
+          // onClick=""
           image={volcanoLandImg}
           // pokemon={volcanoLand}
         />
         <SectionCard
           sectionName="Haunted House"
-          onclick={() => parkSection('hauntedHouse')}
+          // onClick=""
           image={hauntedHouseImg}
           // pokemon={hauntedHouse}
         />
         <SectionCard
           sectionName="Pokemon Ranch"
-          onclick={() => parkSection('pokemonRanch')}
+          // onClick=""
           image={pokemonRanchImg}
           // pokemon={pokemonRanch}
         />
