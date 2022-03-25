@@ -3,10 +3,10 @@ const Schema = mongoose.Schema
 
 const Pokemon = new Schema(
   {
-    name: { type: String },
+    name: { type: String, required: true },
     section: { type: String },
-    overview: { type: String },
-    image: { type: String }
+    image: { type: String },
+    overview: { type: String }
   },
   { timestamps: true }
 )
