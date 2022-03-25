@@ -40,7 +40,7 @@ const Home = () => {
   return (
     <div>
       <Landing />
-      <Landing />
+      <button onClick={() => getPokemon()}>Found a PokeMon?</button>
       <section className="container-grid">
         <SectionCard
           sectionName="Sky Park"
@@ -78,7 +78,6 @@ const Home = () => {
           image={pokemonRanchImg}
           // pokemon={pokemonRanch}
         />
-        <button onClick={() => getPokemon()}>submit</button>
       </section>
       <PokemonCard />
     </div>
