@@ -11,7 +11,7 @@ const SectionCard = (props) => {
       </div>
       <div className="info-wrapper flex-col">
         <h3>{props.sectionName}</h3>
-        <p>Content</p>
+        
       </div>
     </div>
   )

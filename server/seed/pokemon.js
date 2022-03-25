@@ -223,30 +223,30 @@ const main = async () => {
 
   const section = [
     {
-      sectionName: 'SkyPark',
+      sectionName: 'Flying',
       image:
         'https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/06/760771.jpg?q=50&fit=contain&w=943&h=496&dpr=1.5'
     },
     {
-      sectionName: 'WaterPark',
+      sectionName: 'Water',
       image: 'https://wallpaperaccess.com/full/118488.jpg'
     },
     {
-      sectionName: 'ForestLand',
+      sectionName: 'Forest',
       image: 'https://www.1999.co.jp/itbig59/10592095.jpg'
     },
     {
-      sectionName: 'VolcanoLand',
+      sectionName: 'Fire',
       image:
         'https://pm1.narvii.com/7115/ed037afd6a9c1c8c93e4bf8048e34603fe02ed11r1-1024-671v2_hq.jpg'
     },
     {
-      sectionName: 'HauntedHouse',
+      sectionName: 'Ghost',
       image:
         'https://i.pinimg.com/originals/9d/8e/c2/9d8ec2fbccd833b699cefcb214450a9a.jpg'
     },
     {
-      sectionName: 'PokemonRanch',
+      sectionName: 'Ranch',
       image:
         'https://cdn.donmai.us/sample/7c/6a/__whitney_and_miltank_pokemon_and_2_more_drawn_by_nazgul_5511474__sample-7c6abd5f5c0e5954d6846b1d43f02897.jpg'
     }

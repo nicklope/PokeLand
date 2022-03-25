@@ -21,6 +21,7 @@ app.get('/section', pokemonController.getSectionDetails)
 app.get('/', pokemonController.getPokemonDetails)
 app.post('/mission/statement', pokemonController.createPokemonDetails)
 app.get('/poke/card/:name', pokemonController.findPokemon)
+app.get('/:section', pokemonController.getPokemonBySection)
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 

@@ -9,8 +9,9 @@ const ParkSection = () => {
   const [pokemon, setPokemon] = useState([])
 
   const getPokemon = async () => {
-    const response = await axios.get('http://localhost:3001/')
-    console.log(response)
+    const response = await axios.get(`http://localhost:3001/${sectionName}`)
+    console.log(response.data)
+    setPokemon(response.data)
   }
 
   useEffect(() => {

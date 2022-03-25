@@ -3,7 +3,7 @@ import Input from '../components/input'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const MissionStatement = () => {
+const MissionStatement = (props) => {
   const [formValue, setFormValue] = useState({
     name: '',
     section: '',
@@ -25,7 +25,7 @@ const MissionStatement = () => {
 
   return (
     <div>
-      <Landing />
+      <Landing backgroundImage={props.backgroundImage} />
       <section className="input-section">
         <input
           className="form"

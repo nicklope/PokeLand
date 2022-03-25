@@ -4,30 +4,20 @@ import Landing from '../components/landing'
 import PokemonCard from '../components/PokemonCard'
 import SectionCard from '../components/sectionCard'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
-const Home = () => {
+const Home = (props) => {
   const [sections, setSection] = useState([])
 
   const getSections = async () => {
-    const response = await axios.get('http://localhost:3001/')
-    console.log(response.data.pokemon)
-    setSection(response.data.pokemon)
+    const response = await axios.get('http://localhost:3001/section')
+    console.log(response.data.section)
+    setSection(response.data.section)
   }
   useEffect(() => {
     getSections()
   }, [])
   const navigate = useNavigate()
-
-  const skyParkImg =
-    'https://static0.gamerantimages.com/wordpress/wp-content/uploads/2020/06/760771.jpg?q=50&fit=contain&w=943&h=496&dpr=1.5'
-  const waterParkImg = 'https://wallpaperaccess.com/full/118488.jpg'
-  const forestLandImg = 'https://www.1999.co.jp/itbig59/10592095.jpg'
-  const volcanoLandImg =
-    'https://pm1.narvii.com/7115/ed037afd6a9c1c8c93e4bf8048e34603fe02ed11r1-1024-671v2_hq.jpg'
-  const hauntedHouseImg =
-    'https://i.pinimg.com/originals/9d/8e/c2/9d8ec2fbccd833b699cefcb214450a9a.jpg'
-  const pokemonRanchImg =
-    'https://cdn.donmai.us/sample/7c/6a/__whitney_and_miltank_pokemon_and_2_more_drawn_by_nazgul_5511474__sample-7c6abd5f5c0e5954d6846b1d43f02897.jpg'
 
   const navMissionStatement = () => {
     navigate('/mission/statement')
@@ -43,15 +33,32 @@ const Home = () => {
 
   return (
     <div>
-      <Landing />
-      <button onClick={() => navMissionStatement()}>Found a PokeMon?</button>
+      <Landing
+        backgroundImage={props.backgroundImage}
+        landingBanner={props.landingBanner}
+      />
+      <Link to="/mission/statement">
+        <Landing
+          onClick={() => navMissionStatement()}
+          backgroundImage={
+            'https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/06/pokemon-professors-featured.jpg?q=50&fit=contain&w=943&h=500&dpr=1.5'
+          }
+          landingBanner={props.missionBanner}
+        />
+      </Link>
+      <Landing
+        backgroundImage={'https://i.imgur.com/MQXAmH3.png'}
+        landingBanner={
+          'https://fontmeme.com/permalink/220325/88f4258a1aed67434d473062560c4788.png'
+        }
+      />
       <section className="container-grid">
         {sections.map((section) => (
           <div>
             <SectionCard
-              sectionName={section.section}
-              onclick={() => navSection(section.section)}
-              image={skyParkImg}
+              sectionName={`${section.sectionName} Park`}
+              onclick={() => navSection(section.sectionName)}
+              image={section.image}
             />
           </div>
         ))}

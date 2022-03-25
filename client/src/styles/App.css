@@ -73,6 +73,7 @@ button {
 
 .card:hover {
   opacity: 0.8;
+  transform: translateY(10px);
 }
 
 .card .img-wrapper {
@@ -94,13 +95,6 @@ button {
   grid-gap: 1em;
   justify-content: center;
 }
-.genres {
-  width: 100%;
-}
-.genres h2,
-.search h2 {
-  text-align: center;
-}
 
 .pokemon-content .image-container {
   width: 95vw;
@@ -118,11 +112,6 @@ button {
   margin: auto;
   text-align: center;
   width: 100%;
-}
-
-.details {
-  width: 80%;
-  margin: auto;
 }
 
 .flex-row {
