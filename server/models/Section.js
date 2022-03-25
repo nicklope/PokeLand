@@ -1,11 +1,12 @@
+const mongoose = require('mongoose')
 const { Schema } = require('mongoose')
 
 const Section = new Schema(
   {
-    title: { type: String, required: true },
-    description: { type: String, required: true }
+    sectionName: { type: String },
+    image: { type: String }
   },
   { timestamps: true }
 )
 
-module.exports = Section
+module.exports = mongoose.model('Section', Section)

@@ -17,6 +17,7 @@ app.use(express.urlencoded({ extended: false }))
 // app.get('/', (request, response) => {
 //   response.send({ msg: 'Server Running' })
 // })
+app.get('/section', pokemonController.getSectionDetails)
 app.get('/', pokemonController.getPokemonDetails)
 app.post('/mission/statement', pokemonController.createPokemonDetails)
 app.get('/poke/card/:name', pokemonController.findPokemon)
