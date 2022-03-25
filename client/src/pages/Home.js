@@ -11,10 +11,9 @@ const Home = (props) => {
   useEffect(() => {
     // getPokemon()
   }, [])
-  const getPokemon = () => {
+  const gotPokemon = () => {
     // const response = await axios.get('http://localhost:3001/')
     navigate('/mission/statement')
-    // console.log(response)
   }
   const filterPokemon = (pokemonType) => {
     switch (pokemonType) {
@@ -23,43 +22,39 @@ const Home = (props) => {
     }
   }
 
-  const navSection = () => {
-    navigate(`/park/section/`)
-  }
-
   return (
     <div>
       <Landing backgroundImage={props.backgroundImage} banner={props.banner} />
-      <button onClick={() => getPokemon()}>Found a PokeMon?</button>
+      <button onClick={() => props.gotPokemon()}>Found a PokeMon?</button>
       <section className="container-grid">
         <SectionCard
           sectionName="Sky"
-          onclick={() => navSection()}
+          onclick={() => props.navSection()}
           image={props.skyPark}
         />
         <SectionCard
           sectionName="Water"
-          onClick={() => navSection()}
+          onClick={() => props.navSection()}
           image={props.waterPark}
         />
         <SectionCard
           sectionName="Forest"
-          onClick={() => navSection()}
+          onClick={() => props.navSection()}
           image={props.forest}
         />
         <SectionCard
           sectionName="Fire"
-          onClick={() => navSection()}
+          onClick={() => props.navSection()}
           image={props.volcanoLand}
         />
         <SectionCard
           sectionName="Ghost"
-          onClick={() => navSection()}
+          onClick={() => props.navSection()}
           image={props.hauntedHouse}
         />
         <SectionCard
           sectionName="Ranch"
-          onClick={() => navSection()}
+          onClick={() => props.navSection()}
           image={props.pokemonRanch}
         />
       </section>

@@ -39,6 +39,15 @@ function App() {
     navigate('/')
   }
 
+  const navSection = () => {
+    navigate(`/park/section/`)
+  }
+
+  const gotPokemon = () => {
+    // const response = await axios.get('http://localhost:3001/')
+    navigate('/mission/statement')
+  }
+
   const handleChange = (event) => {
     const { name, value } = event.target
     const newValues = (prevState) => {
@@ -67,6 +76,8 @@ function App() {
               volcanoLand={volcanoLandImg}
               hauntedHouse={hauntedHouseImg}
               pokemonRanch={pokemonRanchImg}
+              navSection={navSection}
+              gotPokemon={gotPokemon}
             />
           }
         />
