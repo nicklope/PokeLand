@@ -10,8 +10,33 @@ const ParkSection = ({ pokemon }) => {
   const [hauntedHouse, setHauntedHouse] = useState([])
   const [pokemonRanch, setPokemonRanch] = useState([])
 
+  let { sectionName } = useParams()
+
+  const selectSection = (sectionName) => {
+    switch (sectionName) {
+      case 'skyPark':
+        setSkyPark()
+        break
+      case 'waterPark':
+        setWaterPark()
+        break
+      case 'forestLand':
+        setForestLand()
+        break
+      case 'volcanoLand':
+        setVolcanoLand()
+        break
+      case 'hauntedHouse':
+        setHauntedHouse()
+        break
+      default:
+        setPokemonRanch()
+    }
+  }
+
   useEffect(() => {
     getPokemon()
+    selectSection(sectionName)
   })
 
   const getPokemon = async () => {
