@@ -4,6 +4,11 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 const MissionStatement = () => {
+  const backgroundImage =
+    'https://poketouch.files.wordpress.com/2018/06/pokemon_trainer_spotlight_professor_oak_with_kanto_starters_bulbasaur_charmander_and_squirtle.jpg'
+  const bannerImage =
+    'https://fontmeme.com/permalink/220325/8bd71c754139bff2f2b1d2bdaacfe80e.png'
+
   const [formValue, setFormValue] = useState({
     name: '',
     section: '',
@@ -25,7 +30,7 @@ const MissionStatement = () => {
 
   return (
     <div>
-      <Landing />
+      <Landing image={backgroundImage} banner={bannerImage} />
       <section className="input-section">
         <input
           className="form"

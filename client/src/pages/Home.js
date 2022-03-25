@@ -19,6 +19,10 @@ const Home = () => {
   const pokemonRanchImg =
     'https://cdn.donmai.us/sample/7c/6a/__whitney_and_miltank_pokemon_and_2_more_drawn_by_nazgul_5511474__sample-7c6abd5f5c0e5954d6846b1d43f02897.jpg'
 
+  const backgroundImage = 'https://i.imgur.com/MQXAmH3.png'
+  const bannerImage =
+    'https://fontmeme.com/permalink/220324/b85ecfe51642a549db4b9889f0f37387.png'
+
   useEffect(() => {
     // getPokemon()
   }, [])
@@ -40,7 +44,7 @@ const Home = () => {
 
   return (
     <div>
-      <Landing />
+      <Landing image={backgroundImage} banner={bannerImage} />
       <button onClick={() => getPokemon()}>Found a PokeMon?</button>
       <section className="container-grid">
         <SectionCard
