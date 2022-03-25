@@ -1,6 +1,7 @@
 import Landing from '../components/landing'
 import Input from '../components/input'
 import { useState, useEffect } from 'react'
+import axios from 'axios'
 
 const MissionStatement = () => {
   const [formValue, setFormValue] = useState({
@@ -11,21 +12,26 @@ const MissionStatement = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target
-    setFormValue((preState) => {
+    setFormValue((prevState) => {
       return {
-        ...preState,
+        ...prevState,
         [name]: value
       }
     })
   }
+
+  // const postPoke = async (formValue) => {
+  //   await axios.post('http://localhost:3001/mission/statment', formValue)
+  // }
 
   const { pokemonName, section, image } = formValue
 
   return (
     <div>
       <Landing />
-      <section class="input-section">
+      <section className="input-section">
         <input
+          className="form"
           type="text"
           name="pokemonName"
           placeholder="Name"
@@ -33,6 +39,7 @@ const MissionStatement = () => {
           onChange={handleChange}
         />
         <input
+          className="form"
           type="text"
           name="section"
           placeholder="Section"
@@ -40,13 +47,23 @@ const MissionStatement = () => {
           onChange={handleChange}
         />
         <input
+          className="form"
           type="text"
           name="image"
           placeholder="Image"
           value={image}
           onChange={handleChange}
         />
-        <button>Submit</button>
+        <button
+          onClick={async () =>
+            await axios.post(
+              'http://localhost:3001/mission/statement',
+              formValue
+            )
+          }
+        >
+          Submit
+        </button>
       </section>
     </div>
   )
