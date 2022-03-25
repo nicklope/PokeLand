@@ -1,10 +1,20 @@
 const Pokemon = require('../models/Pokemon')
+const Section = require('../models/Section')
 const axios = require('axios')
 
 const getPokemonDetails = async (req, res) => {
   try {
     const pokemon = await Pokemon.find()
     return res.status(200).json({ pokemon })
+  } catch (error) {
+    return res.status(500).send(error.message)
+  }
+}
+
+const getSectionDetails = async (req, res) => {
+  try {
+    const section = await Section.find()
+    return res.status(200).json({ section })
   } catch (error) {
     return res.status(500).send(error.message)
   }
@@ -34,4 +44,9 @@ const createPokemonDetails = async (req, res) => {
   }
 }
 // res.status(200).json({ pokemon })
-module.exports = { getPokemonDetails, findPokemon, createPokemonDetails }
+module.exports = {
+  getPokemonDetails,
+  findPokemon,
+  createPokemonDetails,
+  getSectionDetails
+}
