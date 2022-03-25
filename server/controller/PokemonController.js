@@ -43,10 +43,19 @@ const createPokemonDetails = async (req, res) => {
     return res.status(500).json({ error: error.message })
   }
 }
+const getPokemonBySection = async (req, res) => {
+  try {
+    const pokemon = await Pokemon.find({ section: req.params.section })
+    res.send(pokemon)
+  } catch (error) {
+    return res.status(500).json({ error: error.message })
+  }
+}
 // res.status(200).json({ pokemon })
 module.exports = {
   getPokemonDetails,
   findPokemon,
   createPokemonDetails,
-  getSectionDetails
+  getSectionDetails,
+  getPokemonBySection
 }
