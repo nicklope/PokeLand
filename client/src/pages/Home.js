@@ -1,11 +1,21 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Landing from '../components/landing'
-import PokemonCard from '../components/pokemonCard'
+import PokemonCard from '../components/PokemonCard'
 import SectionCard from '../components/sectionCard'
 import axios from 'axios'
 
 const Home = () => {
+  const [sections, setSection] = useState([])
+
+  const getSections = async () => {
+    const response = await axios.get('http://localhost:3001/')
+    console.log(response.data.pokemon)
+    setSection(response.data.pokemon)
+  }
+  useEffect(() => {
+    getSections()
+  }, [])
   const navigate = useNavigate()
 
   const skyParkImg =
@@ -19,62 +29,33 @@ const Home = () => {
   const pokemonRanchImg =
     'https://cdn.donmai.us/sample/7c/6a/__whitney_and_miltank_pokemon_and_2_more_drawn_by_nazgul_5511474__sample-7c6abd5f5c0e5954d6846b1d43f02897.jpg'
 
-  useEffect(() => {
-    // getPokemon()
-  }, [])
-  const getPokemon = () => {
-    // const response = await axios.get('http://localhost:3001/')
+  const navMissionStatement = () => {
     navigate('/mission/statement')
-    // console.log(response)
   }
   const filterPokemon = (pokemonType) => {
     switch (pokemonType) {
-      case '':
-      // setSkyPark()
     }
   }
 
-  const navSection = () => {
-    navigate(`/park/section/`)
+  const navSection = (section) => {
+    navigate(`/park/section/${section}`)
   }
 
   return (
     <div>
       <Landing />
-      <button onClick={() => getPokemon()}>Found a PokeMon?</button>
+      <button onClick={() => navMissionStatement()}>Found a PokeMon?</button>
       <section className="container-grid">
-        <SectionCard
-          sectionName="Sky"
-          onclick={() => navSection()}
-          image={skyParkImg}
-        />
-        <SectionCard
-          sectionName="Water"
-          onClick={() => navSection()}
-          image={waterParkImg}
-        />
-        <SectionCard
-          sectionName="Forest"
-          onClick={() => navSection()}
-          image={forestLandImg}
-        />
-        <SectionCard
-          sectionName="Fire"
-          onClick={() => navSection()}
-          image={volcanoLandImg}
-        />
-        <SectionCard
-          sectionName="Ghost"
-          onClick={() => navSection()}
-          image={hauntedHouseImg}
-        />
-        <SectionCard
-          sectionName="Ranch"
-          onClick={() => navSection()}
-          image={pokemonRanchImg}
-        />
+        {sections.map((section) => (
+          <div>
+            <SectionCard
+              sectionName={section.section}
+              onclick={() => navSection(section.section)}
+              image={skyParkImg}
+            />
+          </div>
+        ))}
       </section>
-      <PokemonCard />
     </div>
   )
 }

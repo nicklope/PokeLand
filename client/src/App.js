@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/mission/statement" element={<MissionStatement />} />
-        <Route path="/park/section/" element={<ParkSection />} />
+        <Route path="/park/section/:sectionName" element={<ParkSection />} />
         <Route path="/poke/card" element="" />
       </Routes>
     </div>

@@ -1,40 +1,13 @@
-import PokemonCard from '../components/pokemonCard'
+import PokemonCard from '../components/PokemonCard'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Landing from '../components/landing'
 import axios from 'axios'
 
-const ParkSection = ({ pokemon }) => {
-  const [skyPark, setSkyPark] = useState([])
-  const [waterPark, setWaterPark] = useState([])
-  const [forestLand, setForestLand] = useState([])
-  const [volcanoLand, setVolcanoLand] = useState([])
-  const [hauntedHouse, setHauntedHouse] = useState([])
-  const [pokemonRanch, setPokemonRanch] = useState([])
-
+const ParkSection = () => {
   let { sectionName } = useParams()
+  const [pokemon, setPokemon] = useState([])
 
-  const selectSection = (sectionName) => {
-    switch (sectionName) {
-      case 'skyPark':
-        setSkyPark()
-        break
-      case 'waterPark':
-        setWaterPark()
-        break
-      case 'forestLand':
-        setForestLand()
-        break
-      case 'volcanoLand':
-        setVolcanoLand()
-        break
-      case 'hauntedHouse':
-        setHauntedHouse()
-        break
-      default:
-        setPokemonRanch()
-    }
-  }
   const getPokemon = async () => {
     const response = await axios.get('http://localhost:3001/')
     console.log(response)
@@ -46,8 +19,14 @@ const ParkSection = ({ pokemon }) => {
   }, [])
 
   return (
-    <div>
-      <Landing />
+    <div className="container-grid">
+      {pokemon.map((pokemon) => (
+        <PokemonCard
+          image={pokemon.image}
+          name={pokemon.name}
+          overview={pokemon.overview}
+        />
+      ))}
     </div>
   )
 }
