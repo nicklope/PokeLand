@@ -9,8 +9,8 @@ const app = express()
 const PORT = process.env.PORT || 3001
 
 app.use(express.json())
-app.use(logger('dev'))
 app.use(cors())
+app.use(logger('dev'))
 app.use(express.urlencoded({ extended: false }))
 
 //controller routes go here
