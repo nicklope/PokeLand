@@ -5,7 +5,7 @@ const SectionCard = (props) => {
 
 
   return (
-    <div className="card" onClick=''>
+    <div className="card" onClick={props.onclick}>
       <div className="img-wrapper">
         <img src={props.image} alt="game" />
       </div>
