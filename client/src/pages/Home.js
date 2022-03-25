@@ -22,9 +22,10 @@ const Home = () => {
   useEffect(() => {
     // getPokemon()
   }, [])
-  const getPokemon = async () => {
-    const response = await axios.post('http://localhost:3001/')
-    console.log(response.data)
+  const getPokemon = () => {
+    // const response = await axios.get('http://localhost:3001/')
+    navigate('/mission/statement')
+    // console.log(response)
   }
   const filterPokemon = (pokemonType) => {
     switch (pokemonType) {
@@ -43,40 +44,34 @@ const Home = () => {
       <button onClick={() => getPokemon()}>Found a PokeMon?</button>
       <section className="container-grid">
         <SectionCard
-          sectionName="Sky Park"
+          sectionName="Sky"
           onclick={() => navSection()}
           image={skyParkImg}
-          // pokemon={skyPark}
         />
         <SectionCard
-          sectionName="Water Park"
-          // onClick=""
+          sectionName="Water"
+          onClick={() => navSection()}
           image={waterParkImg}
-          // pokemon={waterPark}
         />
         <SectionCard
-          sectionName="Forest Land"
-          // onClick=""
+          sectionName="Forest"
+          onClick={() => navSection()}
           image={forestLandImg}
-          // pokemon={forestLand}
         />
         <SectionCard
-          sectionName="Volcano Land"
-          // onClick=""
+          sectionName="Fire"
+          onClick={() => navSection()}
           image={volcanoLandImg}
-          // pokemon={volcanoLand}
         />
         <SectionCard
-          sectionName="Haunted House"
-          // onClick=""
+          sectionName="Ghost"
+          onClick={() => navSection()}
           image={hauntedHouseImg}
-          // pokemon={hauntedHouse}
         />
         <SectionCard
-          sectionName="Pokemon Ranch"
-          // onClick=""
+          sectionName="Ranch"
+          onClick={() => navSection()}
           image={pokemonRanchImg}
-          // pokemon={pokemonRanch}
         />
       </section>
       <PokemonCard />

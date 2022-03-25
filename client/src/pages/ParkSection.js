@@ -1,6 +1,8 @@
 import PokemonCard from '../components/pokemonCard'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
+import Landing from '../components/landing'
+import axios from 'axios'
 
 const ParkSection = ({ pokemon }) => {
   const [skyPark, setSkyPark] = useState([])
@@ -33,26 +35,19 @@ const ParkSection = ({ pokemon }) => {
         setPokemonRanch()
     }
   }
+  const getPokemon = async () => {
+    const response = await axios.get('http://localhost:3001/')
+    console.log(response)
+  }
 
   useEffect(() => {
     getPokemon()
-    selectSection(sectionName)
-  })
-
-  const getPokemon = async () => {
-    const response = await axios.get(``)
-    // setGenres(response)
-  }
+    console.log('test')
+  }, [])
 
   return (
     <div>
-      {pokemon.map((poke) => (
-        <PokemonCard
-          name={pokemon.name}
-          image={pokemon.image}
-          description={pokemon.description}
-        />
-      ))}
+      <Landing />
     </div>
   )
 }
