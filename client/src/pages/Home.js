@@ -17,16 +17,19 @@ const Home = () => {
   // const hauntedHouseImg = ''
   // const pokemonRanchImg = ''
 
-  // useEffect(() => {
-  //   getPokemon()
-  // }, [])
-
-  // const filterPokemon = (pokemonType) => {
-  //   switch (pokemonType) {
-  //     case '':
-  //       setSkyPark()
-  //   }
-  // }
+  useEffect(() => {
+    // getPokemon()
+  }, [])
+  const getPokemon = async () => {
+    const response = await axios.post('http://localhost:3001/')
+    console.log(response.data)
+  }
+  const filterPokemon = (pokemonType) => {
+    switch (pokemonType) {
+      case '':
+      // setSkyPark()
+    }
+  }
 
   // const parkSection = (section) => {
   //   navigate(`/park/section/${section}`)
@@ -41,38 +44,39 @@ const Home = () => {
           sectionName="Sky Park"
           onclick={() => parkSection('skyPark')}
           image=""
-          pokemon={skyPark}
+          // pokemon={skyPark}
         />
         <SectionCard
           sectionName="Water Park"
           onclick={() => parkSection('waterPark')}
           image={waterParkImg}
-          pokemon={waterPark}
+          // pokemon={waterPark}
         />
         <SectionCard
           sectionName="Forest Land"
           onclick={() => parkSection('forestLand')}
           image=""
-          pokemon={forestLand}
+          // pokemon={forestLand}
         />
         <SectionCard
           sectionName="Volcano Land"
           onclick={() => parkSection('volcanoLand')}
           image={volcanoLandImg}
-          pokemon={volcanoLand}
+          // pokemon={volcanoLand}
         />
         <SectionCard
           sectionName="Haunted House"
           onclick={() => parkSection('hauntedHouse')}
           image=""
-          pokemon={hauntedHouse}
+          // pokemon={hauntedHouse}
         />
         <SectionCard
           sectionName="Pokemon Ranch"
           onclick={() => parkSection('pokemonRanch')}
           image=""
-          pokemon={pokemonRanch}
+          // pokemon={pokemonRanch}
         />
+        <button onClick={() => getPokemon()}>submit</button>
       </section>
       <PokemonCard />
     </div>
