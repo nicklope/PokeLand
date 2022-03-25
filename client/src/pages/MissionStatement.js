@@ -5,13 +5,9 @@ import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 const MissionStatement = (props) => {
-  const bannerImage =
-    'https://fontmeme.com/permalink/220325/8bd71c754139bff2f2b1d2bdaacfe80e.png'
-  const navigate = useNavigate()
-
   return (
     <div>
-      <Landing backgroundImage={props.backgroundImage} banner={bannerImage} />
+      <Landing backgroundImage={props.backgroundImage} banner={props.banner} />
       <section className="input-section">
         <input
           className="form"
