@@ -5,26 +5,23 @@ import axios from 'axios'
 
 const MissionStatement = () => {
   const [formValue, setFormValue] = useState({
-    pokemonName: '',
+    name: '',
     section: '',
     image: ''
   })
 
   const handleChange = (event) => {
     const { name, value } = event.target
-    setFormValue((prevState) => {
+    const newValues = (prevState) => {
       return {
         ...prevState,
         [name]: value
       }
-    })
+    }
+    setFormValue(newValues)
   }
 
-  // const postPoke = async (formValue) => {
-  //   await axios.post('http://localhost:3001/mission/statment', formValue)
-  // }
-
-  const { pokemonName, section, image } = formValue
+  const { name, section, image } = formValue
 
   return (
     <div>
@@ -33,9 +30,9 @@ const MissionStatement = () => {
         <input
           className="form"
           type="text"
-          name="pokemonName"
+          name="name"
           placeholder="Name"
-          value={pokemonName}
+          value={name}
           onChange={handleChange}
         />
         <input
