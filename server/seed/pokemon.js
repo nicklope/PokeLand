@@ -48,7 +48,8 @@ const main = async () => {
     {
       name: 'Blastoise',
       section: 'Water',
-      overview: '',
+      overview:
+        'The jets of water it spouts from the rocket cannons on its shell can punch through thick steel.',
       image: 'https://www.serebii.net/blackwhite/pokemon/009.png'
     },
     {
