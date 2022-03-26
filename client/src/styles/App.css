@@ -179,3 +179,12 @@ button {
   display: flex;
   align-self: center;
 }
+.backbutton {
+  display: flex;
+  align-self: center;
+}
+.backbutton:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: translateY(-10px);
+}
