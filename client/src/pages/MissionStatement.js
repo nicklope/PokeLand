@@ -1,5 +1,5 @@
 import Landing from '../components/landing'
-import Input from '../components/input'
+import BackButton from '../components/BackButton'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
@@ -92,6 +92,7 @@ const MissionStatement = (props) => {
           </button>
         </Link>
       </section>
+      <BackButton />
     </div>
   )
 }

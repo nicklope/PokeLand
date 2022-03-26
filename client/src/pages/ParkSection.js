@@ -1,4 +1,5 @@
 import PokemonCard from '../components/PokemonCard'
+import BackButton from '../components/BackButton'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Landing from '../components/landing'
@@ -35,6 +36,7 @@ const ParkSection = (props) => {
               />
             ))}
           </div>
+          <BackButton />
         </div>
       )
       break
@@ -54,6 +56,7 @@ const ParkSection = (props) => {
               />
             ))}
           </div>
+          <BackButton />
         </div>
       )
       break
@@ -73,6 +76,7 @@ const ParkSection = (props) => {
               />
             ))}
           </div>
+          <BackButton />
         </div>
       )
       break
@@ -92,6 +96,7 @@ const ParkSection = (props) => {
               />
             ))}
           </div>
+          <BackButton />
         </div>
       )
       break
@@ -111,6 +116,7 @@ const ParkSection = (props) => {
               />
             ))}
           </div>
+          <BackButton />
         </div>
       )
       break
@@ -130,6 +136,7 @@ const ParkSection = (props) => {
               />
             ))}
           </div>
+          <BackButton />
         </div>
       )
       break
