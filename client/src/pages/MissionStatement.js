@@ -28,7 +28,7 @@ const MissionStatement = (props) => {
     <div>
       <Landing
         backgroundImage="https://media.wired.co.uk/photos/606da47d1e0ddb19555fbbba/master/w_1600%2Cc_limit/1_0627-1.jpg"
-        landingBanner="https://fontmeme.com/temporary/be7abc06249343c8932d4a690ede7540.png"
+        landingBanner="https://fontmeme.com/permalink/220326/be7abc06249343c8932d4a690ede7540.png"
       />
       <h1>
         Here at PokeLand, we offer guests an experience like no others. Our
