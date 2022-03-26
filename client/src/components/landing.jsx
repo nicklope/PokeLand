@@ -5,7 +5,7 @@ const Landing = (props) => {
         <section className="image-container">
           <img src={props.backgroundImage} />
           <section className="details">
-            <img src={props.landingBanner} alt='welcome to pokeland'/>
+            <img className="banner" src={props.landingBanner} alt='welcome to pokeland'/>
         </section>
         </section>
 

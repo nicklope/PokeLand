@@ -34,15 +34,17 @@ const Home = (props) => {
         landingBanner={props.landingBanner}
       />
       <Link to="/mission/statement">
-        <Landing
-          onClick={() => navMissionStatement()}
-          backgroundImage={props.missionBackground}
-          landingBanner={props.missionBanner}
-        />
+        <div className="mission-statement">
+          <Landing
+            onClick={() => navMissionStatement()}
+            backgroundImage={props.missionBackground}
+            landingBanner={props.missionBanner}
+          />
+        </div>
       </Link>
-      <Landing
-        backgroundImage={props.mapImage}
-        landingBanner={props.mapBanner}
+      <img
+        className="explore"
+        src="https://fontmeme.com/permalink/220326/83583327f2a84ae44a5af42590fceea2.png"
       />
       <section className="container-grid">
         {sections.map((section) => (

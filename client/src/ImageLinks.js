@@ -1,8 +1,8 @@
 export const backgroundImageLanding =
-  'https://games-b26f.kxcdn.com/wp-content/uploads/2021/07/Pokemon-Wonder-feature-image-770x470.jpg'
+  'https://www.siliconera.com/wp-content/uploads/2021/07/Pokemon-Wonder.jpg'
 export const backgroundImageAdd =
   'https://poketouch.files.wordpress.com/2018/06/pokemon_trainer_spotlight_professor_oak_with_kanto_starters_bulbasaur_charmander_and_squirtle.jpg'
-export const mapImage = 'https://i.imgur.com/MQXAmH3.png'
+export const mapImage = 'https://pbs.twimg.com/media/Eed1Wj4UEAAD-wZ.png:large'
 export const landingBanner =
   'https://fontmeme.com/permalink/220324/b85ecfe51642a549db4b9889f0f37387.png'
 export const missionBanner =
