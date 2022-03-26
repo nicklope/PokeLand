@@ -46,6 +46,13 @@ const main = async () => {
       image: 'https://www.serebii.net/blackwhite/pokemon/146.png'
     },
     {
+      name: 'Fearow',
+      section: 'Flying',
+      overview:
+        'It has the stamina to fly all day on its broad wings. It fights by using its sharp beak.',
+      image: 'https://www.serebii.net/blackwhite/pokemon/022.png'
+    },
+    {
       name: 'Blastoise',
       section: 'Water',
       overview:
@@ -79,6 +86,13 @@ const main = async () => {
       overview:
         'In autumn, its body becomes more fatty in preparing to propose to a mate. It takes on beautiful colors.',
       image: 'https://www.serebii.net/blackwhite/pokemon/119.png'
+    },
+    {
+      name: 'Poliwag',
+      section: 'Water',
+      overview:
+        'Its skin is so thin, its internal organs are visible. It has trouble walking on its newly grown feet.',
+      image: 'https://www.serebii.net/blackwhite/pokemon/060.png'
     },
     {
       name: 'Ghastly',
@@ -116,6 +130,13 @@ const main = async () => {
       image: 'https://www.serebii.net/blackwhite/pokemon/426.png'
     },
     {
+      name: 'Murkrow',
+      section: 'Ghost',
+      overview:
+        'If spotted, it will lure an unwary person into chasing it, then lose the pursuer on mountain trails.',
+      image: 'https://www.serebii.net/blackwhite/pokemon/198.png'
+    },
+    {
       name: 'Charmander',
       section: 'Fire',
       overview:
@@ -148,6 +169,13 @@ const main = async () => {
       section: 'Fire',
       overview:
         'When at an all-out gallop, its blazing mane sparkles, enhancing its beautiful appearance.',
+      image: 'https://www.serebii.net/blackwhite/pokemon/218.png'
+    },
+    {
+      name: 'Slugma',
+      section: 'Fire',
+      overview:
+        'Its body is made of magma. If it doesnt keep moving, its body will cool and harden.',
       image: 'https://www.serebii.net/blackwhite/pokemon/078.png'
     },
     {
@@ -186,6 +214,13 @@ const main = async () => {
       image: 'https://www.serebii.net/blackwhite/pokemon/108.png'
     },
     {
+      name: 'Flaffy',
+      section: 'Ranch',
+      overview:
+        'Its fluffy coat swells to double when static electricity builds up. Touching it can be shocking.',
+      image: 'https://www.serebii.net/blackwhite/pokemon/179.png'
+    },
+    {
       name: 'Bulbasaur',
       section: 'Forest',
       overview:
@@ -219,6 +254,13 @@ const main = async () => {
       overview:
         '	Many writhing vines cover it, so its true identity remains unknown. The blue vines grow its whole life long.',
       image: 'https://www.serebii.net/blackwhite/pokemon/114.png'
+    },
+    {
+      name: 'Tangrowth',
+      section: 'Forest',
+      overview:
+        '	Its arms are made of plants that bind themselves to things. They grow back right away if cut.',
+      image: 'https://www.serebii.net/Shiny/BW/465.png'
     }
   ]
 
